@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,5 +8,12 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderComponent {
 
+  title : string = "Task Tracker";
+
   faTimes = faTimes
+
+  toggleAddTask(){
+    console.log("toggled");
+    
+  }
 }

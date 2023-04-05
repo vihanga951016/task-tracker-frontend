@@ -5,4 +5,5 @@ export interface Task {
     addedDate: string;
     done: boolean;
     disabled: boolean;
+    compulsory: boolean;
 }

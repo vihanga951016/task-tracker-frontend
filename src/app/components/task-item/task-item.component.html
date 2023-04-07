@@ -1,4 +1,4 @@
-<div [ngClass]="{reminder: task.compulsory}" class="task" (dblclick)="onCompulsory()">
+<div *ngIf="!showAddTask" [ngClass]="{reminder: task.compulsory}" class="task" (dblclick)="onCompulsory()">
     <h3>{{task.title}} <fa-icon [icon]="faTimes" [ngStyle]="{'color': 'red'}" (click)="onDelete()"></fa-icon></h3>
     <small>{{task.addedDate}}</small>
 </div>
